@@ -1,0 +1,3 @@
+---
+lazydocker_install_dir: /usr/local/bin
+lazydocker_tmp_dir: /tmp

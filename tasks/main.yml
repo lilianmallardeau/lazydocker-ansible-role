@@ -1,0 +1,8 @@
+---
+- name: Download and install lazydocker to {{ lazydocker_binary }}
+  shell:
+    cmd: curl {{ lazydocker_install_script_url }} | bash
+    creates: "{{ lazydocker_binary }}"
+    chdir: "{{ lazydocker_tmp_dir }}"
+  environment:
+    DIR: "{{ lazydocker_install_dir }}"
